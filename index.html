@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>اختبار نوع الأنمي المفضل</title>
+<title>نوع الأنمي المفضل لك</title>
 <style>
     body { font-family: Arial, sans-serif; background-color: #f0f0f0; text-align: center; padding: 20px; }
     h1 { color: #333; }
@@ -15,137 +15,167 @@
 </head>
 <body>
 
-<h1>اختبر نوع الأنمي المفضل لك</h1>
+<h1>حدد نوع الأنمي المفضل لك</h1>
 
 <div id="quiz">
     <!-- أسئلة الاستبيان -->
     <div class="question">
-        <p>1. ما نوع القصة التي تفضلها؟</p>
+        <p>1. هل تفضل القصص الرومانسية؟</p>
         <select id="q1">
-            <option value="mystery">تشويق وغموض</option>
-            <option value="romance">رومانسي وعاطفي</option>
-            <option value="action">أكشن ومغامرات</option>
-            <option value="sports">رياضي وتحفيزي</option>
-            <option value="comedy">كوميدي وخفيف</option>
-            <option value="sci-fi">خيال علمي وفضاء</option>
+            <option value="romance">نعم</option>
+            <option value="no">لا</option>
         </select>
     </div>
-    
+
     <div class="question">
-        <p>2. ما هو الجو العام الذي تستمتع به أكثر؟</p>
+        <p>2. هل تستمتع بمشاهدة معارك ملحمية وأكشن؟</p>
         <select id="q2">
-            <option value="dark">مظلم ومثير للتفكير</option>
-            <option value="warm">دافئ ومريح</option>
-            <option value="exciting">حماسي ومليء بالطاقة</option>
-            <option value="emotional">عاطفي ومؤثر</option>
-            <option value="fantasy">مدهش وخيالي</option>
+            <option value="action">نعم</option>
+            <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>3. ما نوع الشخصيات التي تفضلها؟</p>
+        <p>3. هل تحب القصص التي تحتوي على عناصر خيال علمي؟</p>
         <select id="q3">
-            <option value="brave">الأبطال الشجعان والمغامرون</option>
-            <option value="smart">الشخصيات الذكية وذات التفكير العميق</option>
-            <option value="funny">الشخصيات الكوميدية والمرحة</option>
-            <option value="romantic">الشخصيات الرومانسية والحساسة</option>
+            <option value="sci-fi">نعم</option>
+            <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>4. هل تفضل النهايات المفتوحة أم المحددة؟</p>
+        <p>4. هل تفضل الأنميات التي تدور حول الرياضة والمنافسة؟</p>
         <select id="q4">
-            <option value="open">نهاية مفتوحة</option>
-            <option value="happy">نهاية محددة وسعيدة</option>
-            <option value="sad">نهاية حزينة ومؤثرة</option>
+            <option value="sports">نعم</option>
+            <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>5. هل تستمتع بالخيال العلمي؟</p>
+        <p>5. هل تحب الأنميات التي تحتوي على مغامرات في عوالم خيالية؟</p>
         <select id="q5">
-            <option value="yes">نعم</option>
+            <option value="fantasy">نعم</option>
             <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>6. هل تحب الأنميات الطويلة أم القصيرة؟</p>
+        <p>6. هل تستمتع بالغموض والتحقيقات؟</p>
         <select id="q6">
-            <option value="long">طويلة</option>
-            <option value="short">قصيرة</option>
+            <option value="mystery">نعم</option>
+            <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>7. ما مدى أهمية الكوميديا بالنسبة لك؟</p>
+        <p>7. هل تفضل الكوميديا واللحظات المرحة؟</p>
         <select id="q7">
-            <option value="important">مهمة جداً</option>
-            <option value="not_important">ليست مهمة</option>
+            <option value="comedy">نعم</option>
+            <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>8. هل تستمتع بالمغامرات في عالم خيالي؟</p>
+        <p>8. هل تحب الدراما والقصص العاطفية المؤثرة؟</p>
         <select id="q8">
-            <option value="yes">نعم</option>
+            <option value="drama">نعم</option>
             <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>9. هل تحب الأنميات التي تحتوي على معارك ملحمية؟</p>
+        <p>9. هل تفضل الأنميات ذات الحبكات العميقة والمعقدة؟</p>
         <select id="q9">
-            <option value="yes">نعم</option>
+            <option value="deep">نعم</option>
             <option value="no">لا</option>
         </select>
     </div>
 
     <div class="question">
-        <p>10. هل تفضل الأنميات التي تحتوي على دراما مؤثرة؟</p>
+        <p>10. هل تحب الأنميات التي تحتوي على فلسفة أو مواضيع نفسية؟</p>
         <select id="q10">
-            <option value="yes">نعم</option>
+            <option value="psychological">نعم</option>
             <option value="no">لا</option>
         </select>
     </div>
 
-    <button class="btn" onclick="showResult()">عرض النوع المفضل</button>
+    <div class="question">
+        <p>11. هل تستمتع بالمغامرات مع الوحوش والكائنات الغريبة؟</p>
+        <select id="q11">
+            <option value="adventure">نعم</option>
+            <option value="no">لا</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <p>12. هل تحب مشاهدة قصص عن الحروب والاستراتيجيات؟</p>
+        <select id="q12">
+            <option value="war">نعم</option>
+            <option value="no">لا</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <p>13. هل تفضل الأنميات التي تدور حول الخيال والسحر؟</p>
+        <select id="q13">
+            <option value="magic">نعم</option>
+            <option value="no">لا</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <p>14. هل تفضل الأنميات التاريخية؟</p>
+        <select id="q14">
+            <option value="historical">نعم</option>
+            <option value="no">لا</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <p>15. هل تستمتع بمشاهدة الأنميات التي تحتوي على عالم ما بعد الكارثة؟</p>
+        <select id="q15">
+            <option value="post-apocalyptic">نعم</option>
+            <option value="no">لا</option>
+        </select>
+    </div>
+
+    <button class="btn" onclick="showResult()">عرض النتيجة</button>
 
     <div id="result" class="result"></div>
 </div>
 
 <script>
     function showResult() {
-        const answers = {
-            q1: document.getElementById("q1").value,
-            q2: document.getElementById("q2").value,
-            q3: document.getElementById("q3").value,
-            q4: document.getElementById("q4").value,
-            q5: document.getElementById("q5").value,
-            q6: document.getElementById("q6").value,
-            q7: document.getElementById("q7").value,
-            q8: document.getElementById("q8").value,
-            q9: document.getElementById("q9").value,
-            q10: document.getElementById("q10").value,
-        };
-
-        let resultText = "";
-
-        if (answers.q1 === "romance" || answers.q10 === "yes") {
-            resultText = "نوعك المفضل هو الأنمي الرومانسي أو الدراما.";
-        } else if (answers.q1 === "action" && answers.q9 === "yes") {
-            resultText = "نوعك المفضل هو الأكشن والمغامرات.";
-        } else if (answers.q3 === "funny" && answers.q7 === "important") {
-            resultText = "أنت تحب الأنميات الكوميدية.";
-        } else if (answers.q5 === "yes") {
-            resultText = "تحب الأنميات التي تحتوي على خيال علمي.";
-        } else if (answers.q6 === "long") {
-            resultText = "تفضل الأنميات الطويلة.";
-        } else {
-            resultText = "جرب أنميات مختلفة لتجد النوع المفضل لك!";
+        const preferences = [];
+        for (let i = 1; i <= 15; i++) {
+            const answer = document.getElementById(q${i}).value;
+            if (answer !== "no") {
+                preferences.push(answer);
+            }
         }
 
-        document.getElementById("result").innerText = resultText;
+        const results = {
+            "romance": "Your Lie in April, Toradora!",
+            "action": "Attack on Titan, My Hero Academia",
+            "sci-fi": "Steins;Gate, Cowboy Bebop",
+            "sports": "Haikyuu!!, Kuroko's Basketball",
+            "fantasy": "Fullmetal Alchemist, Sword Art Online",
+            "mystery": "Death Note, Monster",
+            "comedy": "Gintama, One Punch Man",
+            "drama": "Clannad, Anohana",
+            "deep": "Code Geass, Neon Genesis Evangelion",
+            "psychological": "Psycho-Pass, Paranoia Agent",
+            "adventure": "Hunter x Hunter, One Piece",
+            "war": "Attack on Titan, Kingdom",
+            "magic": "Fate/Zero, Black Clover",
+            "historical": "Vinland Saga, Rurouni Kenshin",
+            "post-apocalyptic": "Attack on Titan, Trigun"
+        };
+
+        let suggestion = "ننصحك بتجربة الأنميات التالية: ";
+        preferences.forEach(pref => suggestion += results[pref] + " | ");
+        
+        document.getElementById("result").innerText = suggestion || "جرب أنواع مختلفة من الأنمي!";
     }
 </script>
 
